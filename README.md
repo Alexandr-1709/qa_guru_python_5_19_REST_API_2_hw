@@ -1,1 +1,1 @@
-# qa_guru_python_5_19_REST_API_2_hw
+# rest api tests with validation json_schema
