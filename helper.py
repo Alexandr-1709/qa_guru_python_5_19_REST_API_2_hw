@@ -26,7 +26,7 @@ class CustomSession(Session):
                                                       *args, **kwargs)
         curl = curlify.to_curl(response.request)
         status_code = response.status_code
-        logging.info(curl)
+        logging.info(f"Status Code: {status_code}\n{curl}")
         with step(f'{method} {url}'):
             allure.attach(body=f'status_code={status_code}\n{curl}',
                           name="Request curl",
