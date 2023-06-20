@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "qa-guru-python-5-19-rest-api-2-hw"
+version = "0.1.0"
+description = ""
+authors = ["Aleksandr <nikiforov1709@ya.ru>"]
+readme = "README.md"
+packages = [{include = "qa_guru_python_5_19_rest_api_2_hw"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+requests = "2.31.0"
+pytest = "7.3.2"
+allure-pytest = "^2.13.2"
+curlify = "2.2.1"
+jsonschema = "4.17.3"
+
+
+[tool.poetry.group.dev.dependencies]
+pylint = "3.0.0a6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
